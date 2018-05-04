@@ -1,6 +1,6 @@
 {
   "name": "Pomodoro Timer",
-  "version": "1",
+  "version": "1.0",
   "description": "A simple pomodoro to control tasks.",
   "permissions": ["alarms", "notifications", "storage"],
   "browser_action": {

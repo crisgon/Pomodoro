@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab');
+
+body {
+  width: 250px;
+  height: 250px;
+  background: #EC6F66;
+  background: -webkit-linear-gradient(to right, #F3A183, #EC6F66);
+  background: linear-gradient(to right, #F3A183, #EC6F66);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Roboto Slab', serif;
+}
+
+img {
+  max-width: 100%;
+}
+
+.btn-nav {
+  width: 40px;
+  border: 0;
+  outline: none;
+  background-color: transparent;
+  cursor: pointer;
+  position: absolute;
+  right: 0px;
+}
+
+.nav {
+  width: 110px;
+  height: 130px;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #fff;
+  box-shadow: 0 0 3px #dcdde1;
+  position: absolute;
+  right: -120px;
+  top: -140px;
+  transition: all .3s;
+}
+
+.nav-link {
+  color: #F3A183;
+  text-decoration: none;
+  transition: all .3s;
+}
+
+.nav-link:hover {
+  transform: scale(1.1);
+}
+
+.nav-open {
+  right: 0;
+  top: 0;
+}
+
+.time {
+  font-size: 5em;
+  color: #fff;
+}
+
+.status {
+  font-size: 1.1em;
+  color: #F3A183;
+  margin-top: -40px;
+  padding: .5em;
+  background-color: #fff;
+  border-radius: 1em;
+}
+
+.timeline {
+  width: 100%;
+  border: 2px solid #fff;
+}
+
+.timeline-mark {
+  width: 10%;
+  display: block;
+  background-color: #fff;
+}
+
+.timeline,
+.timeline-mark {
+  height: 5px;
+  border-radius: .5em;
+}
+
+.controls {
+  width: 150px;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.control-btn {
+  width: 50px;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.control-btn:hover {
+  transform: scale(1.2);
+  transition: all .3s;
+}

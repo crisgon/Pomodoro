@@ -2,20 +2,26 @@
 <html lang="en">
 <head>
   <title>Pomodoro Timer</title>
-  <style>
-    body {
-      padding: .5em;
-    }
-
-    h1 {
-      font-size: 2em;
-      color: tomato;
-    }
-  </style>
+  <link rel="stylesheet" href="popup.css">
 </head>
 <body>
-  <button data-js="code">Code</button>
-  <button>Break</button>
+  <button class="btn-nav"><img src="images/menu.svg" alt="Nav Button"></button>
+  <nav class="nav">
+    <a href="#" class="nav-link">Statistics</a>
+    <a href="#" class="nav-link">Settings</a>
+    <a href="#" class="nav-link">About</a>
+  </nav>
+  <h1 class="time">25:00</h1>
+  <h2 class="status">Break!</h2>
+
+  <div class="timeline">
+    <span class="timeline-mark"></span>
+  </div>
+
+  <div class="controls">
+    <button data-js="play" class="control-btn"><img src="images/play.svg" alt=""></button>
+    <button data-js="stop" class="control-btn"><img src="images/stop.svg" alt=""></button>
+  </div>
   <script src="popup.js"></script>
 </body>
 </html>
